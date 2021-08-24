@@ -1,7 +1,7 @@
 # Transformer
-A translator which can translate English sentence to Chinese sentence, and it is made by using architecture of Transformer 
+A translator which can translate English sentence to Chinese sentence, and it is made by using architecture of Transformer.
 
-( https://arxiv.org/abs/1706.03762 ).
+ https://arxiv.org/abs/1706.03762 
 
 ## File tree
 
