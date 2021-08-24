@@ -16,7 +16,7 @@ A translator which can translate english sentence to chinese sentence, and it is
 ```sh
 python3 main.py --set 4 128 512 8
 ```
-### train your own model
+### Train your own model
 #### -- train
 - Default:
   - EPOCH = 30
@@ -24,7 +24,7 @@ python3 main.py --set 4 128 512 8
 python3 main.py --train 30
 ```
 
-### make a translation
+### Make a translation
 #### --zh
 ```sh
 python3 main.py --zh China, India, and others have enjoyed continuing economic growth.
