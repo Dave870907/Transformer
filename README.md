@@ -3,15 +3,17 @@ A translator which can translate english sentence to chinese sentence, and it is
 
 
 
-##Usage
-###Set hyper parameters
+## Usage
 
-Default:
-num_layers = 4
-d_model = 128
-dff = 512
-num_heads = 8
+### Set hyper parameters
 
-'''sh
+- Default:
+  - num_layers = 4
+  - d_model = 128
+  - dff = 512
+  - num_heads = 8
+
+```sh
 python3 main.py --set 4 128 512 8
-'''
+```
+
