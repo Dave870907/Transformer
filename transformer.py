@@ -44,7 +44,7 @@ try:
   subword_encoder_en = tfds.deprecated.text.SubwordTextEncoder.load_from_file(en_vocab_file)
   print(f"載入已建立的字典： {en_vocab_file}")
 except:
-  print("沒有已建立的字典，從頭建立。")
+  print("沒有已建立的字典，需要建立新的字典")
   subword_encoder_en = tfds.deprecated.text.SubwordTextEncoder.build_from_corpus(
       (en.numpy() for en, _ in train_examples), 
       target_vocab_size=2**13) # 有需要可以調整字典大小
@@ -56,7 +56,7 @@ try:
   subword_encoder_zh = tfds.deprecated.text.SubwordTextEncoder.load_from_file(zh_vocab_file)
   print(f"載入已建立的字典： {zh_vocab_file}")
 except:
-  print("沒有已建立的字典，從頭建立。")
+  print("沒有已建立的字典，需要建立新的字典")
   subword_encoder_zh = tfds.deprecated.text.SubwordTextEncoder.build_from_corpus(
       (zh.numpy() for _, zh in train_examples), 
       target_vocab_size=2**13, # 有需要可以調整字典大小
@@ -577,7 +577,7 @@ def check_model(checkpoint_path = checkpoint_path,log_dir = log_dir):
       print(f'已讀取最新的 checkpoint，模型已訓練 {last_epoch} epochs。')
   else:
       last_epoch = 0
-      print("沒找到 checkpoint，從頭訓練。")
+      print("沒找到 checkpoint，需要從頭訓練模型。")
   return last_epoch,ckpt_manager
 
 
@@ -634,7 +634,7 @@ def training_model(EPOCHS = 30):
   last_epoch ,ckpt_manager= check_model()
   
   # def training(EPOCHS = 41):
-  print(f"此超參數組合的 Transformer 已經訓練 {last_epoch} epochs。")
+  print(f"此 Hyper parameter 的 Transformer 已經訓練 {last_epoch} epochs。")
   print(f"剩餘 epochs：{min(0, last_epoch - EPOCHS)}")
 
 
