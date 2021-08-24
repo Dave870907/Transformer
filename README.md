@@ -1,7 +1,23 @@
 # Transformer
 A translator which can translate english sentence to chinese sentence, and it is made by using architecture of Transformer.
 
+## File tree
 
+```
+.
+├── Transformer_tutorial.ipynb
+├── __pycache__
+│   └── transformer.cpython-38.pyc
+├── main.py
+├── nmt
+│   ├── checkpoints
+│   ├── en_vocab.subwords
+│   ├── logs
+│   └── zh_vocab.subwords
+├── tensorflow-datasets
+│   └── downloads
+└── transformer.py
+```
 
 ## Usage
 
