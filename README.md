@@ -22,6 +22,10 @@ A translator which can translate English sentence to Chinese sentence, and it is
 ```
 
 ## Usage
+### clone the project
+```sh
+git clone https://github.com/Dave870907/Transformer.git
+```
 
 ### Set hyper parameters
 #### -- set
