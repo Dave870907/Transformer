@@ -22,7 +22,7 @@ A translator which can translate English sentence to Chinese sentence, and it is
 ```
 
 ## Usage
-### Clone the project
+### Clone this repo
 ```sh
 git clone https://github.com/Dave870907/Transformer.git
 ```
